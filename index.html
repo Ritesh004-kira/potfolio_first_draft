@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Doe | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="scanlines"></div>
+    <div id="terminal">
+        <div id="scroll-container">
+            <div id="boot-sequence">
+                <p>Initializing system...</p>
+                <p>Loading dependencies... <span class="green">OK</span></p>
+                <p>Mounting volumes... <span class="green">OK</span></p>
+                <p>Starting portfolio v1.0...</p>
+                <br>
+                <p>Welcome to the interactive terminal portfolio.</p>
+                <p>Type <span class="command-highlight">'help'</span> to see available commands.</p>
+                <br>
+            </div>
+            <div id="output"></div>
+            <div id="input-line">
+                <span class="prompt">visitor@portfolio:~$</span>
+                <input type="text" id="command-input" autocomplete="off" autofocus>
+            </div>
+        </div>
+
+        <div id="mascot">
+            <pre>
+<span class="orange">      /\   /\</span>
+<span class="orange">     /  \ /  \</span>
+<span class="orange">    /_   ^   _\</span>
+<span class="white">    \  </span><span class="green">O</span><span class="white">   </span><span class="green">O</span><span class="white">  /</span>
+<span class="white">     \   </span><span class="orange">v</span><span class="white">   /</span>
+<span class="white">      \     /</span>
+<span class="white">       \___/</span>
+</pre>
+        </div>
+
+        <img id="avatar" src="avatar.png" alt="User Avatar">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
