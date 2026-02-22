@@ -6,17 +6,17 @@ let commandHistory = [];
 let historyIndex = -1;
 
 const FILES = {
-    'about': `<p>Hi, I'm <span class="green">Jane Doe</span>.</p>
-              <p>I'm a Full Stack Developer obsessed with building clean, efficient, and scalable web applications.</p>
+    'about': `<p>Hi, I'm <span class="green">Ritesh Vishwakarma</span>.</p>
+              <p>I'm an aspiring Full Stack Developer obsessed with building clean, efficient, and scalable web applications with modern technologies such as Artificial Intelligence and Machine Learning.</p>
               <p>Current Status: <span class="green">Available for hire.</span></p>`,
 
-    'skills': `<p>LANGUAGES: <span class="green">JavaScript, TypeScript, Python, Java</span></p>
+    'skills': `<p>LANGUAGES: <span class="green">JavaScript, HTML, CSS, Python, C, C++</span></p>
                <p>FRONTEND: <span class="green">React, Vue, Next.js, Tailwind</span></p>
                <p>BACKEND: <span class="green">Node.js, Django, PostgreSQL, Docker</span></p>`,
 
-    'contact': `<p>Email: <a href="mailto:hello@example.com" class="green">hello@example.com</a></p>
-                <p>GitHub: <a href="#" class="green">github.com/janedoe</a></p>
-                <p>LinkedIn: <a href="#" class="green">linkedin.com/in/janedoe</a></p>`
+    'contact': `<p>Email: <a href="mailto:riteshvish94@gmail.com" class="green">My Email</a></p>
+                <p>GitHub: <a href="https://github.com/Ritesh004-kira" class="green">My GitHub</a></p>
+                <p>LinkedIn: <a href="https://tinyurl.com/ritesh-linkedin" class="green">My LinkedIn</a></p>`
 };
 
 const COMMANDS = {
@@ -35,11 +35,11 @@ const COMMANDS = {
 
     'resume': () => {
         const link = document.createElement('a');
-        link.href = 'resume.txt';
-        link.download = 'Jane_Doe_Resume.txt';
+        link.href = 'Ritesh_Vishwakarma_resume.pdf';
+        link.download = 'Ritesh_Vishwakarma_resume.pdf';
         link.click();
         return `<p>Initiating download sequence...</p>
-                <p>Transferring <span class="green">Jane_Doe_Resume.txt</span> [100%]</p>
+                <p>Transferring <span class="green">Ritesh_Vishwakarma_Professional.docx</span> [100%]</p>
                 <p>Download complete.</p>`;
     },
 
@@ -49,13 +49,14 @@ const COMMANDS = {
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-card">
-                    <span class="time-range">2023 - Present</span>
-                    <h3 class="role">Senior Full Stack Engineer</h3>
-                    <h4 class="company">TechCorp Industries</h4>
-                    <p class="description">Leading a team of 5 developers building next-gen SaaS platforms. Improved system latency by 40%.</p>
+                    <span class="time-range">2025 - Present</span>
+                    <h3 class="role">Student at Chandigarh University</h3>
+                    <h4 class="company">Chandigarh University</h4>
+                    <p class="description">Pursuing a Bachelor of Technology in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning.</p>
                 </div>
             </div>
             
+            <!--
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-card">
@@ -75,6 +76,7 @@ const COMMANDS = {
                     <p class="description">Built responsive landing pages and maintained legacy codebase. Collaborated with UX/UI designers.</p>
                 </div>
             </div>
+            -->
         </div>`;
     },
 
@@ -82,16 +84,19 @@ const COMMANDS = {
         return `
         <div class="project-grid">
             <div class="project-card">
-                <div class="project-title">E-Commerce API</div>
-                <p>RESTful API built with Node.js and Express. Handles payments via Stripe.</p>
+                <div class="project-title">Digital-Wallet</div>
+                <p>Logic written in C language and converted to python language for GUI (flask, html, css, js) </p>
+                <a href="https://digital-wallet-kappa-silk.vercel.app/" class="green">Live Link</a>
             </div>
             <div class="project-card">
-                <div class="project-title">Task Manager CLI</div>
-                <p>A python-based CLI tool for productivity buffs. Syncs with Notion.</p>
+                <div class="project-title">E-book reader</div>
+                <p>An offline ebook reader made with html, css, supabase and javascript.Integrated dictionary api for vocabulary support.</p>
+                <a href="https://epub-reader-delta.vercel.app/" class="green">Live Link</a>
             </div>
             <div class="project-card">
                 <div class="project-title">Portfolio v1</div>
-                <p>My first portfolio site built with pure HTML/CSS.</p>
+                <p>My first portfolio site built with pure HTML/CSS and javascript.</p>
+                <a href="https://potfolio-first-draft.vercel.app/" class="green">Live Link</a>
             </div>
         </div>`;
     },
